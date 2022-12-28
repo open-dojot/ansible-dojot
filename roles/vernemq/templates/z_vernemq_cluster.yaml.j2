@@ -6,7 +6,7 @@ metadata:
   name: k8s
   namespace: {{ dojot_namespace }}
 spec:
-  baseimage: opendojot/vernemq-dojot
+  baseImage: opendojot/vernemq-dojot
   env:
     - name: PLUGIN_DISC_LIFETIME_SESSION
       value: "1500000"
@@ -36,7 +36,7 @@ spec:
       cpu: 500m
     requests:
       cpu: 200m
-  sidecarBaseimage: opendojot/cert-sidecar
+  sidecarBaseImage: opendojot/cert-sidecar
   sidecarEnv:
     - name: CERT_SC_APP_SIDECAR_TO
       value: "vernemq-k8s"
