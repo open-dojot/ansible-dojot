@@ -21,7 +21,7 @@ spec:
       serviceAccountName: flowbroker
       restartPolicy: Always
       containers:
-      - image: dojot/flowbroker:{{ dojot_flowbroker_version }}
+      - image: opendojot/flowbroker:{{ dojot_flowbroker_version }}
         name: flowbroker
         env:
         - name: FLOWBROKER_CACHE_HOST
@@ -37,9 +37,9 @@ spec:
         - name: DOJOT_MANAGEMENT_USER
           value: flowbroker
       - name: flowbroker-redis
-        image: dojot/redis:5.0.5-alpine3.10
+        image: opendojot/redis:5.0.5-alpine3.10
       - name: flowbroker-context-manager
-        image: dojot/flowbroker-context-manager:{{ dojot_flowbroker_context_manager_version }}
+        image: opendojot/flowbroker-context-manager:{{ dojot_flowbroker_context_manager_version }}
         env:
         - name: SERVICE_PORT
           value: "8080"

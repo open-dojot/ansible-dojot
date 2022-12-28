@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/mongo:{{ dojot_mongodb_version }}
+      - image: opendojot/mongo:{{ dojot_mongodb_version }}
         name: mongodb
         volumeMounts:
         - name: mongodb-volume

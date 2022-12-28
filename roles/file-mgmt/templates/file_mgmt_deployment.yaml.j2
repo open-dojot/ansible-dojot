@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: file-mgmt
-        image: dojot/file-mgmt:{{ dojot_file_mgmt_version }}
+        image: opendojot/file-mgmt:{{ dojot_file_mgmt_version }}
         env:
         - name: FILEMGMT_CONSUMER_METADATA_BROKER_LIST
           value: "kafka-server:{{ dojot_kafka_port }}"

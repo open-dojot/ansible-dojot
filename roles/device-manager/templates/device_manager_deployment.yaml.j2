@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/device-manager:{{ dojot_devm_version }}
+      - image: opendojot/device-manager:{{ dojot_devm_version }}
         name: device-manager
         env:
         - name: DBHOST

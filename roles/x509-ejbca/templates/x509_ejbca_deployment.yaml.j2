@@ -21,7 +21,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: x509-ejbca
-        image: dojot/ejbca:{{ dojot_x509_ejbca_version  }}
+        image: opendojot/ejbca:{{ dojot_x509_ejbca_version  }}
         readinessProbe:
           httpGet:
             path: /ejbca/publicweb/healthcheck/ejbcahealth

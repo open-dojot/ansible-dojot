@@ -35,7 +35,7 @@ spec:
         runAsUser: 100
       containers:
       - name: kong
-        image: dojot/kong:{{ dojot_apigw_version }}
+        image: opendojot/kong:{{ dojot_apigw_version }}
         ports:
         - containerPort: {{ dojot_internal_http_port }}
         - containerPort: {{ dojot_internal_api_config_port }}

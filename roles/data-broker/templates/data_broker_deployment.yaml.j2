@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/data-broker:{{ dojot_data_broker_version }}
+      - image: opendojot/data-broker:{{ dojot_data_broker_version }}
         name: data-broker
         env:
         - name: KAFKA_HOSTS

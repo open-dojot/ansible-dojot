@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: kafka-loopback
-        image: dojot/kafka-loopback:{{ dojot_loopback_version }}
+        image: opendojot/kafka-loopback:{{ dojot_loopback_version }}
 {% if dojot_enable_node_affinity %}
       affinity:
         nodeAffinity:

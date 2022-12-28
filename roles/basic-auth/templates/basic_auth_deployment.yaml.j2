@@ -19,7 +19,7 @@ spec:
         app: dojot
     spec:
       containers:
-      - image: dojot/device-basic-authentication:{{ dojot_basic_auth_version }}
+      - image: opendojot/device-basic-authentication:{{ dojot_basic_auth_version }}
         name: basic-auth
         env:
         - name: BASIC_AUTH_LOG_CONSOLE_LEVEL

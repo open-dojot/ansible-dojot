@@ -11,7 +11,7 @@ spec:
       restartPolicy: OnFailure
       containers:
       - name: kong-route-config
-        image: dojot/byrnedo-alpine-curl
+        image: opendojot/byrnedo-alpine-curl
         volumeMounts:
         - mountPath: /config_file
           name: kong-route-config

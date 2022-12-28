@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/image-manager:{{ dojot_image_manager_version }}
+      - image: opendojot/image-manager:{{ dojot_image_manager_version }}
         name: image-manager
         env:
         - name: S3URL

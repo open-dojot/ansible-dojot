@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/rabbitmq:{{ dojot_rabbitmq_version }}
+      - image: opendojot/rabbitmq:{{ dojot_rabbitmq_version }}
         name: rabbitmq
 {% if dojot_enable_node_affinity %}
       affinity:

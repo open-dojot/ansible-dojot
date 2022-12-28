@@ -19,7 +19,7 @@ spec:
         app: dojot
     spec:
       containers:
-      - image: dojot/redis:5.0.5-alpine3.10
+      - image: opendojot/redis:5.0.5-alpine3.10
         name: device-manager-redis
       restartPolicy: Always
 {% if dojot_enable_node_affinity %}

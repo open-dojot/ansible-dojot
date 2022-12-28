@@ -21,7 +21,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/redis:5.0.5-alpine3.10
+      - image: opendojot/redis:5.0.5-alpine3.10
         name: data-broker-redis
 {% if dojot_enable_node_affinity %}
       affinity:

@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/influxdb-storer:{{ dojot_influxdb_storer_version }}
+      - image: opendojot/influxdb-storer:{{ dojot_influxdb_storer_version }}
         name: influxdb-storer
         env:
         - name: STORER_LOG_CONSOLE_LEVEL

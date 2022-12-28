@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/kafka2ftp:{{ dojot_kafka2ftp_version }}
+      - image: opendojot/kafka2ftp:{{ dojot_kafka2ftp_version }}
         name: kafka2ftp
         env:
         - name: KAFKA_HOSTS

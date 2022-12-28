@@ -18,7 +18,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: v2k-bridge
-        image: dojot/v2k-bridge:{{ dojot_v2k_version}}
+        image: opendojot/v2k-bridge:{{ dojot_v2k_version}}
         readinessProbe:
           httpGet:
             path: /ready
@@ -65,7 +65,7 @@ spec:
         - mountPath: /certs
           name: v2k-certs
       - name: v2k-sidecar
-        image: dojot/cert-sidecar:{{ dojot_v2k_version }}
+        image: opendojot/cert-sidecar:{{ dojot_v2k_version }}
         readinessProbe:
           httpGet:
             path: /ready

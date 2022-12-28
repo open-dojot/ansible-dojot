@@ -35,7 +35,7 @@ spec:
           value: MINIO_ACCESS_KEY
         - name: MINIO_SECRET_KEY_FILE
           value: MINIO_SECRET_KEY
-        image: dojot/minio:{{ dojot_minio_version }}
+        image: opendojot/minio:{{ dojot_minio_version }}
         args:
         - server
         - /data

@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/postgres:{{ dojot_psql_version }}
+      - image: opendojot/postgres:{{ dojot_psql_version }}
         name: postgres
         env:
           - name: POSTGRES_USER

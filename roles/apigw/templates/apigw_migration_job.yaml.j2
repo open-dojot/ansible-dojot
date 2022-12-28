@@ -31,7 +31,7 @@ spec:
             secretKeyRef:
               name: kong-secret
               key: db
-        image: dojot/kong:{{ dojot_apigw_version }}
+        image: opendojot/kong:{{ dojot_apigw_version }}
         args: ["kong", "migrations", "bootstrap"]
 {% if dojot_enable_node_affinity %}
       affinity:

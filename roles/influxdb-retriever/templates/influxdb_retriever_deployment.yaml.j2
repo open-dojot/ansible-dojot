@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/influxdb-retriever:{{ dojot_influxdb_retriever_version }}
+      - image: opendojot/influxdb-retriever:{{ dojot_influxdb_retriever_version }}
         name: influxdb-retriever
         env:
         - name: RETRIEVER_LOG_CONSOLE_LEVEL

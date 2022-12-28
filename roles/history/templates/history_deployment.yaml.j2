@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/history:{{ dojot_history_version }}
+      - image: opendojot/history:{{ dojot_history_version }}
         name: history
         env:
         - name: FALCON_SETTINGS_MODULE

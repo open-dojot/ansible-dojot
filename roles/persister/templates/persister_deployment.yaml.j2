@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/persister:{{ dojot_persister_version }}
+      - image: opendojot/persister:{{ dojot_persister_version }}
         name: persister
         env:
         - name: FALCON_SETTINGS_MODULE

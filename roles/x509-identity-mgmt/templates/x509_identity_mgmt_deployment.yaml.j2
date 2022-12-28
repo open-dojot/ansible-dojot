@@ -20,7 +20,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: x509-identity-mgmt
-        image: dojot/x509-identity-mgmt:{{ dojot_x509_identity_mgmt_version  }}
+        image: opendojot/x509-identity-mgmt:{{ dojot_x509_identity_mgmt_version  }}
         readinessProbe:
           httpGet:
             path: /health

@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/gui:{{ dojot_gui_version }}
+      - image: opendojot/gui:{{ dojot_gui_version }}
         name: gui
 {% if dojot_enable_node_affinity %}
       affinity:

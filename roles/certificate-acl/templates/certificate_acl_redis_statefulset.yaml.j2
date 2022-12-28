@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/redis:6.0.4-alpine3.11
+      - image: opendojot/redis:6.0.4-alpine3.11
         name: certificate-acl-redis
 {% if dojot_enable_node_affinity %}
       affinity:

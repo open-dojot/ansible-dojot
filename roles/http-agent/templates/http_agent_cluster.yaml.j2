@@ -18,7 +18,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: http-agent-cert-sidecar
-        image: dojot/cert-sidecar:{{ dojot_http_agent_version }}
+        image: opendojot/cert-sidecar:{{ dojot_http_agent_version }}
         env:
         - name: CERT_SC_APP_SIDECAR_TO
           value: "http-agent"
@@ -45,7 +45,7 @@ spec:
           name: http-agent-certs
 
       - name: http-agent
-        image: dojot/http-agent:{{ dojot_http_agent_version }}
+        image: opendojot/http-agent:{{ dojot_http_agent_version }}
         env:
         - name: HOSTNAME
           value: http-agent

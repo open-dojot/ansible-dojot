@@ -23,7 +23,7 @@ spec:
         fsGroup: 0
       containers:
       - name: certificate-acl
-        image: dojot/certificate-acl:{{ dojot_certificate_acl_version }}
+        image: opendojot/certificate-acl:{{ dojot_certificate_acl_version }}
         readinessProbe:
           httpGet:
             path: /ready

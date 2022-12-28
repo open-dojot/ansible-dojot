@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/iotagent-mosca:{{ dojot_iotagent_mosca_version }}
+      - image: opendojot/iotagent-mosca:{{ dojot_iotagent_mosca_version }}
         name: iotagent-mosca
         env:
         - name: MOSCA_TLS_DNS_LIST
@@ -39,7 +39,7 @@ spec:
           value: "{{ dojot_insecure_mqtt }}"
         - name: KAFKA_HOSTS
           value: kafka-server:{{ dojot_kafka_port }}
-      - image: dojot/redis:5.0.5-alpine3.10
+      - image: opendojot/redis:5.0.5-alpine3.10
         name: redis
         ports:
         - containerPort: 6379

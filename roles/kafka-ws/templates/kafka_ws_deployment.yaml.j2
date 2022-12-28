@@ -23,7 +23,7 @@ spec:
         fsGroup: 0
       containers:
       - name: kafka-ws
-        image: dojot/kafka-ws:{{ dojot_kafka_ws_version }}
+        image: opendojot/kafka-ws:{{ dojot_kafka_ws_version }}
         # WARNING: if you are using Mutual TLS, the readiness won't work because it's not supported
         # by Kubernetes
         readinessProbe:

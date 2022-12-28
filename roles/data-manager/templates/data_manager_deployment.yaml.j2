@@ -20,7 +20,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: dojot/data-manager:{{ dojot_data_manager_version }}
+      - image: opendojot/data-manager:{{ dojot_data_manager_version }}
         name: data-manager
 {% if dojot_enable_node_affinity %}
       affinity:
